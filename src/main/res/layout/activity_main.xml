@@ -1,0 +1,140 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDoNothing"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="16dp"
+        android:text="Color set using tint"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/txtDoNothing"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icBike"
+            android:src="@mipmap/ic_directions_bike_grey"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:tint="@color/red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="32dp"
+            android:text="Color set using tint in xml"/>
+    </LinearLayout>
+
+    <!-- Enter Color -->
+    <View
+        android:layout_above="@+id/txtEnter"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/txtEnter"
+        android:layout_below="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="16dp"
+        android:text="Enter Color"/>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@+id/txtEnter"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icBus"
+            android:src="@mipmap/ic_directions_bus_white"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"/>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp">
+
+            <EditText
+                android:id="@+id/etColor"
+                android:hint="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnBus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Color"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Generate Random Color -->
+    <View
+        android:layout_above="@+id/txtRandomColor"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/txtRandomColor"
+        android:layout_below="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="16dp"
+        android:text="Generate Random Color"/>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_below="@+id/txtRandomColor"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icFerry"
+            android:src="@mipmap/ic_directions_ferry_white"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnFerry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="32dp"
+            android:text="Change Color"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
